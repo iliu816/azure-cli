@@ -227,7 +227,7 @@ def update_app_type_version(client,
                             cluster_name,
                             application_type_name,
                             version,
-                            package_url=None,
+                            package_url,
                             tags=None):
     try:
         currentAppTypeVersion = client.application_type_versions.get(
